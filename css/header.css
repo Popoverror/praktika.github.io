@@ -1,0 +1,162 @@
+.info__conteiner {
+     max-width: 1566px; /* 1566 */  
+     padding: 0px 25px;
+     box-sizing: content-box;
+}
+.info__body {
+     flex-wrap: wrap;
+     display: flex;
+     margin: 0px -15px;
+     
+}
+.info__column {
+     padding: 30px 15px;
+     flex: 0 1 13%;
+}
+@media (max-width: 1574px){
+     .info__column {
+          flex: 0 1 25%;
+          margin-left: auto;
+          margin-right: auto;
+     } 
+}
+@media (max-width: 990px){
+     .info__column {
+          flex: 0 1 25%;
+     } 
+}
+
+@media (max-width: 500px){
+     .info__column {
+          flex: 0 1 35%;
+     } 
+}
+
+.info__item {
+     padding: 15px 0px;
+     text-align: center;
+     height: 100%;
+     vertical-align: bottom;
+}
+.item-info {  
+     height: 100%;   
+}
+.item-info__icon { 
+       
+}
+.info-link{
+     align-items: center;
+     color: #324950;
+     white-space: nowrap;
+     vertical-align: top;
+     font-weight: 400;
+     font-size: 20px;
+     line-height: 142.7%;
+}
+img.link-icon {
+     width: 60px;
+     height: 55px;
+     display: block;
+     margin-left: auto;
+     margin-right: auto;
+     margin-bottom: 8px;
+}
+
+
+<section class="page_info info">
+           <div class="info__conteiner _container">
+            <div class="info__body">
+               <div class="info__column">
+                  <div class="info__item item-info">
+                     <div class="item-info__icon">
+                        <a href="" class="info-link">
+                           <img class="link-icon"  src="/img/wheat.svg" alt="Wheat">Wheat</a>
+                     </div>
+                  </div>
+               </div>
+         </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ .info {
+}
+.info__container {
+     max-width: 1566px;
+     padding: 0px 15px;
+     margin: auto;
+     box-sizing: content-box;
+}
+.info__body {
+     display: flex;
+     margin: 0px -15px;
+}
+.info__column {
+
+}
+.info__item {
+     padding: 35px 100px;
+     display: flex;
+     justify-content: center;
+     flex-wrap: wrap;
+}
+.item {
+}
+.info-link {
+     color: #324950;
+     text-align: center;
+     text-align-last: center;
+     vertical-align:bottom;
+}
+
+<div class="info__container">
+               <div class="info__body">
+                  <div class="info__column">
+                     <ul class="info__item item">
+                        <li class="info__item">
+                           <a href="" class="info-link">
+                              <img src="/img/wheat.svg" alt="Wheat">Wheat</a>
+                        </li>
+                        <li class="info__item">
+                           <a href="" class="info-link">
+                              <img src="/img/ConfecyionWatermalon.svg" alt="Confecyion Watermalon">Confecyion Watermalon</a>
+                        </li>
+                        <li class="info__item">
+                           <a href="" class="info-link">
+                              <img src="/img/Cover.svg" alt="Cover">Cover</a>
+                        </li>
+                        <li class="info__item">
+                           <a href="" class="info-link">
+                              <img src="/img/ConfectionSunflower.svg" alt="ConfectionSun flower">Confection Sunflower</a>
+                        </li>
+                        <li class="info__item">
+                           <a href="" class="info-link">
+                              <img src="/img/Tomato.svg" alt="Tomato">Tomato</a>
+                        </li>
+                        <li class="info__item">
+                           <a href="" class="info-link">
+                              <img src="/img/EggplantPO.svg" alt="Eggplant P/O">Eggplant P/O</a>
+                        </li>
+                        <li class="info__item">
+                           <a href="" class="info-link">
+                              <img src="/img/OrnamentalSunflower.svg" alt="Ornamental Sunflower">Ornamental Sunflower</a>
+                        </li>
+                     </ul>
+                     </div> 
+                  </div>
+               </div>
+            </div>

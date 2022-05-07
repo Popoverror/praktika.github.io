@@ -1,0 +1,557 @@
+@font-face {
+     font-family: 'RobotoSlab';
+     src: url('../fonts/RobotoSlab-Regular.svg#RobotoSlab-Regular') format('svg'),
+          url('../fonts/RobotoSlab-Regular.ttf') format('truetype'),
+          url('../fonts/RobotoSlab-Regular.woff') format('woff');
+     font-weight: normal;
+     font-style: normal;
+   }
+
+/* Обнуление */
+*,
+*::before,
+*::after {
+     padding: 0;
+     margin: 0;
+     border: 0;
+     box-sizing: border-box;
+}
+a { 
+     text-decoration: none;
+}
+ul,
+ol,
+li {
+     list-style: none;
+}
+img {
+     vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+     font-weight: inherit;
+     font-size: inherit;
+}
+html,
+body {
+     height: 100%;
+     line-height: 1;
+     font-size: 18px;
+     color: #324950;
+     font-weight: 400;
+     font-family: 'RobotoSlab';
+     background-color: #fafafa;
+}
+/* --------------------------------------------------- */
+ .wrapper{
+      min-height: 100%;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+ }
+/* --------------------------------------------------- */
+ ._container {
+      max-width: 1110px;
+      padding: 0px 15px;
+      margin: auto;
+      box-sizing: content-box;
+ }
+ ._ibg {
+      position: relative;
+ }
+._ibg img {
+     position: absolute;
+     width: 100%;
+     height: 100%;
+     top: 0;
+     left: 0;
+     object-fit: cover;
+}
+ /* ---Шапка---------------------------------------- */
+ .header {
+     position: absolute;
+     width: 100%;
+     left: 0;
+     top: 0;
+     z-index: 50;
+}
+.header__container_flex{
+     padding: 20px 0px;
+     display: flex;
+     flex-wrap: wrap;
+	margin: 0 auto;
+     justify-content: space-between; /* выравниваем блок по центру */
+     max-width: 1110px;
+     margin: auto;
+     box-sizing: content-box;
+}
+.header__container__main {
+     flex-grow:0; /* растягивание элементов */
+	display: flex; 
+     justify-content: flex-start; 
+     min-height: 117px;
+}
+.header__container__side{
+	flex-shrink:0; /* Убираем уменьшение = 150 */
+	display: flex;
+     justify-content: space-between;
+	flex-direction: column;
+}
+.header_logo {
+     display: flex;
+     width: 226px;
+     height: 113px;
+}
+/* --------------------------------------------------- */
+@media (max-width: 1024px){
+     .header_logo {
+     width: 150px;
+     height: 76px
+     } 
+}
+@media (max-width: 768px){
+     .header_logo {
+     width: 150px;
+     height: 76px
+     } 
+}
+/* --------------------------------------------------- */
+.header__search {
+     display: flex;
+     align-self:flex-end;
+     margin: 0px -20px;
+}
+#search__form{  
+     
+     background: transparent;
+     height: 29px;
+     padding-left: 0px;
+     padding-right: 26px;
+     color:#324950;
+     outline: none;
+     border-bottom: 1px solid #324950;
+}
+.search__lupa {
+     position: relative;
+     cursor: pointer;
+     top: 5px;
+     right: 20px;
+     width: 20px;
+     height: 20px;
+     background: none;
+     outline: none;
+}
+.header__menu {
+     text-align: right;
+     padding-top: 91px;   
+}
+/* --------------------------------------------------- */
+@media (max-width: 1024px){
+     .header__menu {
+          margin: 60px 0px 0px 90px;  ;
+     } 
+}
+@media (max-width: 768px){
+     .header__menu {
+          margin: 30px 0px 0px 5px;
+     } 
+}
+/* --------------------------------------------------- */
+.menu{
+     padding: 15px 0px;
+}
+.menu__list {
+     flex-wrap: wrap;
+     display: flex;
+     align-self: flex-end;
+}
+.menu__item {
+     margin: 0px 0px 0px 20px;
+     padding: 15px 0px;
+}
+.menu__link {
+     color: #324950;
+     line-height: 18px;
+}
+/* --------------------------------------------------- */
+@media (max-width: 768px){
+     .menu__link {
+          font-size: 22px;
+     } 
+}
+/* ---Page---------------------------------------- */
+.page {
+     flex: 1 1 auto;
+}
+.page__main-block {
+}
+.page_info {
+}
+.page__manual {
+}
+.page__direction {
+}
+/* ---Main---------------------------------------- */
+.main-block {
+     position: relative;
+}
+.main-block__container {
+}
+.main-block__body{
+     padding: 377px 0px 300px 0px;
+     position: relative;
+     z-index: 2;    
+}
+.main-block__title {
+     font-size: 48px;
+     color: #735440;
+     text-align: center;
+     font-weight: 700;
+}
+/* --------------------------------------------------- */
+@media (max-width: 768px){
+     .main-block__title {
+          font-size: 32px;
+     } 
+}
+/* --------------------------------------------------- */
+.main-block__buttons {    
+     display: flex;  
+     justify-content: center;    
+     padding: 16px 31px;
+     font-weight: 500;
+     z-index: 2;
+     
+}
+.main-block__button {
+     font-size: 18px;
+     background: #57984C;
+     color: #fff;
+     display: flex;  
+     justify-content: center;    
+     padding: 16px 31px;
+     z-index: 2;
+     line-height: 142%;
+}
+/* --------------------------------------------------- */
+@media (max-width: 768px){
+     .main-block__button {
+          font-size: 12px;
+     } 
+}
+/* --------------------------------------------------- */
+.main-block__image {
+     position: absolute;
+     width: 100%;
+     height: 100%;
+     top: 0;
+     left: 0;
+     object-fit: cover;
+}
+/* ---INFO---------------------------------------- */
+
+
+.info {
+     background-color: #fff;
+}
+.info__conteiner {
+     max-width: 1566px; /* 1566 */  
+     padding: 0px 25px;
+     box-sizing: content-box;
+}
+.info__body {
+     flex-wrap: wrap;
+     display: flex;
+     margin: 0px -15px;
+     
+}
+.info__column {
+     padding: 30px 15px;
+     flex: 0 1 13%;
+}
+@media (max-width: 1574px){
+     .info__column {
+          flex: 0 1 25%;
+          margin-left: auto;
+          margin-right: auto;
+     } 
+}
+@media (max-width: 990px){
+     .info__column {
+          flex: 0 1 25%;
+     } 
+}
+
+@media (max-width: 500px){
+     .info__column {
+          flex: 0 1 35%;
+     } 
+}
+
+.info__item {
+     padding: 15px 0px;
+     text-align: center;
+     height: 100%;
+     vertical-align: bottom;
+}
+.item-info {  
+     height: 100%;   
+}
+.item-info__icon { 
+     align-items: center;
+     color: #324950;
+     white-space: nowrap;
+     vertical-align: top;
+     font-weight: 400;
+     font-size: 20px;
+     line-height: 142.7%;
+}
+img.link-icon {
+     width: 60px;
+     height: 55px;
+     display: block;
+     margin-left: auto;
+     margin-right: auto;
+     margin-bottom: 20px;
+}
+
+
+/* ---MANUAL1---------------------------------------- */
+.manual {  
+     background-image: url(../img/pgmanual.svg);
+     background-repeat: no-repeat; 
+     background-position: center;  
+     padding: 50px 0px;
+}
+.manual__container {
+     flex-wrap: wrap;
+     display: flex;
+     justify-content: space-between;
+}
+
+.manual__body {
+     width: 495px;
+}
+.manual__title {
+     font-weight: 700;
+     font-size: 64px;
+     line-height: 142.7%;
+     margin: 175px 0px 0px 0px;
+}
+.manual__gap{
+     margin: 25px 0px;
+
+}
+.manual__text {
+     margin: -80px 0px;
+     font-size: 20px;
+     line-height: 162.7%;
+}
+.manual__photo {
+     padding: 68px 0px;
+}
+/* ---MANUAL2---------------------------------------- */
+.manual__container2 {
+     justify-content: space-between;
+     display: flex;
+}
+.manual__body2 {
+     
+}
+.manual__title2 {
+     font-weight: 700;
+     font-size: 64px;
+     line-height: 142.7%;
+     margin: 175px 0px 0px 93px
+}
+.manual__gap {
+     margin: 25px 0px;
+}
+.manual__text2 {
+     margin: -80px 0px 0px 93px;
+     font-size: 20px;
+     line-height: 162.7%;
+}
+.manual__photo2 {
+     padding: 42px 0px;
+}
+
+/* ---DIRECTION---------------------------------------- */
+.direction {
+     background-color: #EDEDED;
+}
+.direction__container {
+     
+}
+.direction__body {
+}
+.direction__header {
+}
+
+
+.direction__title {
+     
+     font-weight: 700;
+     font-size: 64px;
+     line-height: 142.7%;
+     color: #324950;
+     position: relative;
+     text-align: center;
+     padding: 70px 0px;
+}
+
+
+.direction__gap {
+     margin: -45px 0px;
+     position: relative;
+     text-align: center;
+}
+.direction__row {
+     display: flex;
+     align-items: center;
+     padding: 85px 0px;
+}
+.direction__column {
+     flex: 0 0 33.333%
+}
+
+
+.item-direction {
+}
+.item-direction__icon {
+     margin: 75px 0px 25px 0px;
+     display: flex;
+     align-items: flex-end;
+     justify-content: space-evenly;
+}
+.item-direction__title {
+     margin: 0px 0px 27px 0px;
+     font-weight: 700;
+     font-size: 24px;
+     line-height: 142.7%;
+     color: #57984C;
+     text-align: center;
+
+}
+.item-direction__gab2 {
+     position: relative;
+     text-align: center;
+}
+.item-direction__text {
+     width: 289px;
+     font-weight: 400;
+     font-size: 18px;
+     line-height: 142.7%;
+     margin-left: auto;
+     margin-right: auto;
+     text-align: center;    
+}
+
+
+
+
+
+/*.footer_second{
+     background: #324950;
+     color: #B9B9B9;;
+ }
+ .footerFirst {
+     background-color: #2D3F45;
+     padding-top: 5px;
+ }
+ 
+ .footerFirst .row {
+     margin-top: 10px;
+ }
+ 
+ .footer__item {
+     margin: 0 13px;
+     margin-top: 5px;
+ }
+ 
+ .footer__item a {
+     font-family: 'Roboto';
+     color: #fff;
+     font-size: 16px;
+ }
+ 
+ .footer__link {
+     margin: 0 13px;
+ }
+ 
+ .crosses {
+     padding-top: 20px;
+ }
+ 
+ .greenText {
+     color: #57984C;
+ }
+ 
+ .footer__menu {
+     display: flex;
+     justify-content: center;
+ }
+ 
+ footer {
+     background-color: #324950;
+     color: #B9B9B9;
+     font-family: 'Roboto';
+     font-size: 14px;
+     padding: 10px 0;
+ }
+
+          </div>
+            <div class="footer_second">
+               <div class="footer__second__text">AGRIDERA SEEDS & AGRICULTURE LTD. © 2020</div>
+          </div>
+
+ */
+
+ /* ---Подвал--------------------------------------------- */
+.footer {
+     background-color: #324950;
+     color: #B9B9B9;
+     font-size: 16px;
+     height: 76px; 
+     align-items: center;
+
+}
+.footer__conteiner {
+     padding: 0px 0px;
+}
+.footer__first {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: 0px 0px;
+}
+.footer__first__text {
+     align-items: center;
+}
+.footer__first__list {
+     margin: 0px 0px;
+     display: flex;
+     justify-content: center;
+}
+.footer__first__item {
+     margin: 15px 15px;
+     color: #324950;
+}
+.footer__first__text__link {
+     color: #fff;
+}
+
+.footer__first__photo {
+     display: flex;
+     justify-content: center;
+}
+.footer__first__link {
+     margin: 0px 10px;
+}
+.footer__first__photo__link {
+     color: #fff;
+}
