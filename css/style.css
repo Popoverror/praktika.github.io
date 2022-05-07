@@ -55,7 +55,7 @@ body {
  }
 /* --------------------------------------------------- */
  ._container {
-      max-width: 1110px;
+      width: 1110px;
       padding: 0px 15px;
       margin: auto;
       box-sizing: content-box;
@@ -259,7 +259,7 @@ body {
      background-color: #fff;
 }
 .info__conteiner {
-     max-width: 1566px; /* 1566 */  
+     width: 1566px; /* 1566 */  
      padding: 0px 25px;
      box-sizing: content-box;
 }
@@ -413,7 +413,7 @@ img.link-icon {
 .direction__row {
      display: flex;
      align-items: center;
-     padding: 85px 0px;
+     padding-bottom: 85px;
 }
 .direction__column {
      flex: 0 0 33.333%
@@ -513,12 +513,12 @@ img.link-icon {
 
  /* ---Подвал--------------------------------------------- */
 .footer {
-     background-color: #324950;
+     background-color:  #2D3F45;
      color: #B9B9B9;
      font-size: 16px;
      height: 76px; 
      align-items: center;
-
+     display: flex;
 }
 .footer__conteiner {
      padding: 0px 0px;
@@ -554,4 +554,11 @@ img.link-icon {
 }
 .footer__first__photo__link {
      color: #fff;
+}
+.footer__second__text{
+     background-color: #324950;
+     color: #B9B9B9;
+     text-align: center;
+     padding: 15px 0px;
+     font-size: 15px;
 }
