@@ -1,0 +1,319 @@
+body{
+    font-family: 'Roboto Slab', serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #324950;
+    background: #FCF0F0 !important;
+}
+
+a{
+    color: #324950 !important;
+    font-weight: 500;
+}
+
+header{
+    height: 130px;
+    background: #fff;
+}
+
+.headerTop{
+    margin:0 auto;
+    padding-top:20px;
+}
+
+.headerTop .logo{
+    position: absolute;
+    width: 166px;
+    height: 83px;
+    left: 390px;
+    top: 20px;
+
+    background: url(../img/TomatoAll/Logo.png);
+    mix-blend-mode: darken;
+}
+
+.headerTop .logo{
+    background: url(../img/TomatoAll/Logo.png);
+    position:absolute;
+    top:20px;
+    left:0;
+}
+
+.headerTop .search{
+    position:absolute;
+    right:0;
+    top:20px;
+    display:flex;
+    width:350px;
+    justify-content: space-between;
+}
+
+.headerTop img{
+    object-fit: contain;
+}
+
+.headerTop .search .line{
+    width:350px;
+    border:1px solid black;
+    height:0px;
+    position:absolute;
+    top:24px;
+}
+
+.headerTop .navigation{
+    position:absolute;
+    top:85px;
+    right:0;
+    width:510px;
+    display:flex;
+    justify-content: space-between;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 525;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: right;
+}
+
+.headerTop .search input[type = "text"]:focus{
+    outline: none;
+}
+
+.headerTop .search input[type = "text"]{
+    width:100%;
+    background-color: transparent;
+    border:none;
+}
+
+.top-photo{
+    width: 100%;
+}
+
+main{
+    display: block;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+    margin-bottom: 30px;
+}
+
+.content{
+    display: block;
+    width: 1152px;
+    padding: 0;
+    margin: 0 auto;
+}
+
+.content h1{
+    color: #324950;
+
+    margin-top: 50px;
+}
+
+.content h1::after{
+    display: flex;
+    position: relative;
+
+    content: "\2716\2716\2716\2716\2716";
+    
+    letter-spacing: 3px;
+    font-size: 10px;
+    font-weight: bolder;
+    color: #57984C;
+    text-align: center;
+    margin: 40px 0;
+}
+
+article{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 1097px;
+    
+    font-family: 'Roboto Slab', serif;
+    font-size: 17px;
+    font-weight: 400;
+    color: #324950;
+    line-height: 25.5px;
+}
+
+article p{
+    margin-bottom: 25px;
+}
+
+blockquote{
+    display: flex;
+    margin-bottom: 33px;
+}
+
+blockquote p{
+    margin: auto 0;
+}
+
+blockquote::before{
+    display: inline-flex;
+    content: "";
+    border-left: 4px solid red;
+    border-radius: 4px;
+    height: 60px;
+    margin-right: 26px;
+}
+
+.programs{
+    display: flex;
+    flex-direction: row;
+    background: #fff;
+    width: 1152px;
+    height: 450px;
+    padding: 50px 20px;
+    margin: 30px 0 33px 0;
+}
+
+.programsElem{
+    display: flex;
+    flex-direction: column;
+    margin: 0 15px;
+}
+
+.programsElem h2{
+    width: 280px;
+    height: 58px;
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.programsElem p{
+    display: block;
+    width: 340px;
+    height: 262px;
+    margin-top: 20px;
+}
+
+.programsElem h2::after{
+    display: block;
+    position: relative;
+    content: "";
+    width: 340px;
+    border: 1px solid #324950;
+    margin: 20px 0;
+}
+
+#small-decoration::before{
+    margin-left: 27px; height: 40px;
+}
+
+.tomatoWrapper{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    width: 1097px;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.tomatoElem{
+    width: 350px;
+    height: 320px;
+    margin-bottom: 30px;
+}
+
+.tomatoTitle{
+    display: block;
+    position: relative;
+    top: -71px;
+    width: 350px;
+    height: 71px;
+    padding-top: 12px;
+
+    background: #fff;
+    text-align: center;
+    color: #57984C;
+}
+
+.tomatoTitle h2{
+    margin: 0;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.tomatoTitle p{
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0;
+}
+
+footer{
+    height: 127px;
+}
+
+footer .topFooter{
+    background: #2D3F45;
+    height:76px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+footer .topFooter div + div{
+    margin-left:174px;
+}
+
+footer .topFooter .leftTopFooter{
+    font-size:16px;
+    line-height: 23px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    width:724px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .topFooter .leftTopFooter a{
+    color: rgb(255, 255, 255) !important;
+    font-weight: 400;
+    font-style: normal;
+}
+
+footer .topFooter .rightTopFooter{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+footer .topFooter .rightTopFooter img + img{
+    margin-left:14.4px;
+}
+
+footer .bottomFooter{
+    background: #324950;
+    height:51px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color:#B9B9B9;
+    line-height: 20px;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400 !important;
+}
+
+.cross{
+    height: 6.242706298828125px;
+    width: 47.24261474609375px;
+    left: 404.99957275390625px;
+    top: 1333.9999694824219px;
+    border-radius: 0px;
+    background-image: url(../img/TomatoAll/Crosses.png);
+    margin-bottom:30.34px;
+}
+
+
+
+
+
+

@@ -16,7 +16,7 @@
      border: 0;
      box-sizing: border-box;
 }
-a { 
+a:hover{ 
      text-decoration: none;
 }
 ul,
@@ -70,118 +70,6 @@ body {
      top: 0;
      left: 0;
      object-fit: cover;
-}
- /* ---Шапка---------------------------------------- */
- .header {
-     position: absolute;
-     width: 100%;
-     left: 0;
-     top: 0;
-     z-index: 50;
-}
-.header__container_flex{
-     padding: 20px 0px;
-     display: flex;
-     flex-wrap: wrap;
-	margin: 0 auto;
-     justify-content: space-between; /* выравниваем блок по центру */
-     max-width: 1110px;
-     margin: auto;
-     box-sizing: content-box;
-}
-.header__container__main {
-     flex-grow:0; /* растягивание элементов */
-	display: flex; 
-     justify-content: flex-start; 
-     min-height: 117px;
-}
-.header__container__side{
-	flex-shrink:0; /* Убираем уменьшение = 150 */
-	display: flex;
-     justify-content: space-between;
-	flex-direction: column;
-}
-.header_logo {
-     display: flex;
-     width: 226px;
-     height: 113px;
-}
-/* --------------------------------------------------- */
-@media (max-width: 1024px){
-     .header_logo {
-     width: 150px;
-     height: 76px
-     } 
-}
-@media (max-width: 768px){
-     .header_logo {
-     width: 150px;
-     height: 76px
-     } 
-}
-/* --------------------------------------------------- */
-.header__search {
-     display: flex;
-     align-self:flex-end;
-     margin: 0px -20px;
-}
-#search__form{  
-     
-     background: transparent;
-     height: 29px;
-     padding-left: 0px;
-     padding-right: 26px;
-     color:#324950;
-     outline: none;
-     border-bottom: 1px solid #324950;
-}
-.search__lupa {
-     position: relative;
-     cursor: pointer;
-     top: 5px;
-     right: 20px;
-     width: 20px;
-     height: 20px;
-     background: none;
-     outline: none;
-}
-.header__menu {
-     text-align: right;
-     padding-top: 91px;   
-}
-/* --------------------------------------------------- */
-@media (max-width: 1024px){
-     .header__menu {
-          margin: 60px 0px 0px 90px;  ;
-     } 
-}
-@media (max-width: 768px){
-     .header__menu {
-          margin: 30px 0px 0px 5px;
-     } 
-}
-/* --------------------------------------------------- */
-.menu{
-     padding: 15px 0px;
-}
-.menu__list {
-     flex-wrap: wrap;
-     display: flex;
-     align-self: flex-end;
-}
-.menu__item {
-     margin: 0px 0px 0px 20px;
-     padding: 15px 0px;
-}
-.menu__link {
-     color: #324950;
-     line-height: 18px;
-}
-/* --------------------------------------------------- */
-@media (max-width: 768px){
-     .menu__link {
-          font-size: 22px;
-     } 
 }
 /* ---Page---------------------------------------- */
 .page {
@@ -416,9 +304,12 @@ img.link-icon {
      padding-bottom: 85px;
 }
 .direction__column {
+     
      flex: 0 0 33.333%
 }
-
+.direction__column-link{
+     text-decoration: none;
+}
 
 .item-direction {
 }
@@ -442,6 +333,7 @@ img.link-icon {
      text-align: center;
 }
 .item-direction__text {
+     color: #324950;
      width: 289px;
      font-weight: 400;
      font-size: 18px;
@@ -450,67 +342,6 @@ img.link-icon {
      margin-right: auto;
      text-align: center;    
 }
-
-
-
-
-
-/*.footer_second{
-     background: #324950;
-     color: #B9B9B9;;
- }
- .footerFirst {
-     background-color: #2D3F45;
-     padding-top: 5px;
- }
- 
- .footerFirst .row {
-     margin-top: 10px;
- }
- 
- .footer__item {
-     margin: 0 13px;
-     margin-top: 5px;
- }
- 
- .footer__item a {
-     font-family: 'Roboto';
-     color: #fff;
-     font-size: 16px;
- }
- 
- .footer__link {
-     margin: 0 13px;
- }
- 
- .crosses {
-     padding-top: 20px;
- }
- 
- .greenText {
-     color: #57984C;
- }
- 
- .footer__menu {
-     display: flex;
-     justify-content: center;
- }
- 
- footer {
-     background-color: #324950;
-     color: #B9B9B9;
-     font-family: 'Roboto';
-     font-size: 14px;
-     padding: 10px 0;
- }
-
-          </div>
-            <div class="footer_second">
-               <div class="footer__second__text">AGRIDERA SEEDS & AGRICULTURE LTD. © 2020</div>
-          </div>
-
- */
-
  /* ---Подвал--------------------------------------------- */
 .footer {
      background-color:  #2D3F45;
