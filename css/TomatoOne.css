@@ -1,0 +1,254 @@
+@font-face {
+  font-family: 'RobotoSlab-Regular';
+  src: url('../fonts/RobotoSlab-Regular.svg#RobotoSlab-Regular') format('svg'),
+       url('../fonts/RobotoSlab-Regular.ttf') format('truetype'),
+       url('../fonts/RobotoSlab-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'RobotoSlab-Regular';
+}
+header.bg_home {
+  width: 100%;
+  height: 100%;
+  background: url(../img/bg.jpg) no-repeat;
+  background-size: cover;
+}
+
+.navbar-brand img{
+	width: 100%;
+	height: 100%;
+	}
+
+.nav-bar li {
+	padding-right: 25px;
+}
+
+.nav-link {
+	font-size:1em !important
+}
+
+
+* {box-sizing: border-box;}
+form {
+  position: relative ;
+  width: 345px;
+  border-bottom: 1.5px solid black;
+}
+
+input, button {
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
+input {
+  width: 100%;
+  height: 45px;
+  padding-left: 18px;
+}
+
+.search {
+  height: 45px;
+  width: 45px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+}
+
+.search:before {
+  content: "\f002";
+  font-family: FontAwesome;
+  font-size: 22px;
+}
+
+
+ul.hr li{
+  display: inline; 
+  margin-right: 6px;
+  padding: 4px;
+  color: white;
+}
+
+.fa-facebook, .fa-twitter, 
+.fa-instagram, .fa-youtube,
+.fa-linkedin-in{
+  color: #105319;
+  font-size: 22px;
+  margin: 12px 7px 12px 7px;
+}
+
+.fa-facebook:hover, .fa-twitter:hover,
+.fa-instagram:hover, .fa-youtube:hover,
+.fa-linkedin-in:hover{
+	color: #ccc;
+}
+
+.seeds {
+  margin:12px 7px 22px 7px;
+  font-size: 14px;
+  color: black;
+}
+
+.seeds img{  
+  height: 37px;
+  margin: 17px 7px 17px 7px;
+}
+
+.seeds figcaption{color: black;}
+
+.bg_body{
+  background: url(../img/bg_body.png) center no-repeat;
+  background-color: rgb(239, 243, 243);
+  background-size: cover;
+  }
+
+.bg_body2 {
+  background-color: rgb(229, 236, 236);  
+ 
+}
+
+.bg_body2 img{
+  height: 165px;
+}
+
+.bg_body2 h3{color: #1fa030;}
+
+.bg_body2 hr{
+  background: #238b31;
+  width: 180px;
+}
+
+.bg_body2 p{font-size: 18px}
+
+.line { 
+  border-left: 2px solid #725440(255, 102, 0);
+  padding-left: 10px; 
+ }
+
+ .card_tom {
+   color: rgb(110, 158, 19);  
+ }
+ 
+ .card_tom figure{
+   text-align: center;
+    background-color: white;
+  }
+
+  .card_tom img{
+    display: block;
+    height: auto;
+    max-width: 100%;
+  }
+
+.dow {
+  width: 210px;
+  height: 60px;  
+  border: 2.5px solid #105319; 
+  border-radius: 55px;
+  background: url("../img/ico_pdf.png") 15px no-repeat  ;
+  display: inline-block;  
+  padding: 12px;
+  color: #105319;
+  text-align: center; 
+  padding-left: 32px; 
+}
+
+.bg_tom_one{ 
+  background: url(../img/tom_one_bg.png) center no-repeat;
+  background-color: rgb(240, 240, 240);   
+  background-size: cover;
+}
+
+hr{ 
+    background-color: olivedrab;
+    width: 50%;  
+    display: inline-block;
+  }
+
+  .tom_one img{
+    display: block;
+    height: auto;
+  }
+
+  .bg_tom_one h5{
+    color: olivedrab;
+  }
+
+  .bg_tom_one li{
+    color: olivedrab;
+    padding: 5px;
+  }
+
+  .bg_tom_one li span{
+    color: black;
+  }
+
+  footer{
+    height: 127px;
+}
+
+footer .topFooter{
+    background: #2D3F45;
+    height:76px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+footer .topFooter div + div{
+    margin-left:174px;
+}
+
+footer .topFooter .leftTopFooter{
+    font-size:16px;
+    line-height: 23px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    width:724px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .topFooter .leftTopFooter a{
+    color: rgb(255, 255, 255) !important;
+    font-weight: 400;
+    font-style: normal;
+}
+
+footer .topFooter .rightTopFooter{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+footer .topFooter .rightTopFooter img + img{
+    margin-left:14.4px;
+}
+
+footer .bottomFooter{
+    background: #324950;
+    height:51px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color:#B9B9B9;
+    line-height: 20px;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400 !important;
+}
+
+.cross{
+    height: 6.242706298828125px;
+    width: 47.24261474609375px;
+    left: 404.99957275390625px;
+    top: 1333.9999694824219px;
+    border-radius: 0px;
+    background-image: url(../img/TomatoAll/Crosses.png);
+    margin-bottom:30.34px;
+}
