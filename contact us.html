@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Contact us</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/responsive.css">
+</head>
+   <header style="background-color: white; " >
+    <div class="container ">
+        <nav class="navbar navbar-expand-md navbar-light">
+            <div class="center">					
+                <div class="navbar-brand " id="log"><img src="images/Logo.png"></div>				
+                <button class="navbar-toggler" type="button" data-target="#my-nav" data-toggle="collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>				
+            </div>		
+            <div class="center">
+                <div class="header_sear" >			
+                <form class="form-inline ">
+                    <input type="text" placeholder="Search">
+                    <button class="search" type="submit"></button>
+                </form>	
+                </div>
+                <div id="my-nav" class="collapse navbar-collapse">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Company Profile</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Serviced</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">R & D</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact us.html" class="nav-link">Contact</a>
+                    </li>
+                    </ul>
+                </div>
+            </div>			
+        </nav>
+    </div>  
+        <div>
+            <img src="images/bg_cont.jpg" class="img-fluid">
+        </div>
+    </header>    
+    <body style="background-color: #f3f3f3;">
+        <div class="container m-auto" id="app">
+           <b> <h3>Contact us</h3></b>
+                 <div class="cross"></div>
+                 <table class="cart">
+                    <tr class="cart-list">
+                        <td class="cart-item" v-for="item in cart">
+                            <div class="cartImg ">
+                                <img :src="'images/'+item.image" alt="">
+                            </div>
+                            <div class="cart_text">
+                                <div class="cart_subtitle">
+                                    <h4>{{item.title}}</h4>
+                                    <p>{{item.short_text}}</p>
+                                </div>
+                                <a class="" href="#" @click.prevent="removeFromCart(item.id)">
+                                    <img src="images/cross.png" width="5px" alt="">
+                                </a>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+                      <form @submit.prevent = "makeOrder()" action="" v-if="formVisible">         
+                         <div class="form-row ">     
+                             <div class="col-4">                                    
+                         <p>Name * </p><input ctype="text"  name="name" class="form-control" required>
+                         <p>Compay name </p> <input v-model="contactFields[1].text" type="text" name="conpahy name" class="form-control" required>
+                         <p>Position</p> <input v-model="contactFields[2].text" type="text" name="position" class="form-control" required>
+                         <p>City</p> <input v-model="contactFields[3].text" type="text" name="city" class="form-control" required>
+                         <p>Country</p> <input v-model="contactFields[4].text" type="text" name="country" class="form-control"required>
+                         <p>Telephone</p> <input v-model="contactFields[5].text" type="text" name="phone" maxlength="10" class="form-control" required>
+                         <p>Email *</p> <input v-model="contactFields[5].text" type="mail" name="mail" class="form-control"  required>
+                     </div>
+                     <div class="ml-auto"></div>
+                     <div class="col-6 ">                    
+                         <label for="input">You are a</label>
+                             <select id="input" class="form-control" v-model="contactFields[7].text">
+                             <option selected>seed producer</option>
+                             <option></option>
+                             <option></option>
+                             <option></option>
+                         </select>
+                         <p>If other, please specify</p><input type="text" v-model="contactFields[8].text" name="other" class="form-control" required>
+                         <p>You are intrested in </p> <textarea type="text" v-model="contactFields[9].text" name="intrested" class="form-control" cols="30" rows="10" required></textarea>
+                            <p>Please, type this code</p>
+                         <div class="container ">
+                            <div class="row contIMG">
+                                <div class="col-lg-2 col-md-2 col-sm m-2">						
+                                 <img src="images/image 12.png" width="60px" height="30px" > 
+                             </div>
+                             <div class="col-lg-6 col-md-6 col-sm m-0">	
+                                 <input type="text" class="form-control" required>
+                             </div>
+                             <div class="col-lg-2 col-md-2 col-sm mt-1">	
+                                 <button type="submit" class="button-contact">Send message</button>
+                               </div>
+                         </div>
+                         </div>
+                     </div>                       
+                 </div>
+              </form> 
+              <ul  v-if="!formVisible">
+                <li v-for="field in contactFields">
+                    <div class="field-text" v-if="field.text">
+                        <h4>{{field.caption}}</h4>
+                        <p>{{field.text}}</p>
+                    </div>
+                </li>
+            </ul>
+         </div>   
+         <div class="container-fluid text-center m-auto" style="background-color: white;">
+             <b><h5 style="color: green; ">Our Address</h5></b>
+             <hr>
+             <p>AGRIDERA Seeds & Agriculture Ltd.</p> 
+             <p>P.O Box 103,</p> 
+             <p>Gedera 70750, Israel.</p> 
+             <p>Telephone: +972 8 944 9222</p> 
+         </div> 
+         <div class="col-lg-4 col-md-4 col-sm ">           
+            <div class="list">						
+                <h4>Capitals</h4>
+                <div class="capitals"></div>
+            </div>
+        </div>
+         <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+         <script src="js/main.js"></script>    
+     </body>
+     <footer class="ico">
+        <div class="container-fluid text-center ">
+            <div class="row padding justify-content-center ">
+                <div class="col-lg-8 col-md-8 col-sm-6 ">
+                    <ul class="hr">
+                        <a href=""><li>PROFILE</li></a>
+                        <a href=""><li>MANAGEMENT</li></a>
+                        <a href=""><li>PRODUCTS</li></a>
+                        <a href=""><li>R&D</li></a>
+                        <a href=""><li>LINKS</li></a>
+                        <a href=""><li>SITEMAP</li></a>
+                        <a href=""><li>CONTACTS</li></a>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6 ">
+                    <a href="#"><img src="images/Ico_tw.png" alt=""></a>
+                    <a href="#"><img src="images/Ico_inst.png" alt=""></a>
+                    <a href="#"><img src="images/Ico_fb.png" alt=""></a>
+                    <a href="#"><img src="images/Ico_tube.png" alt=""></a>
+                    <a href="#"><img src="images/Ico_in.png" alt=""></a>
+                </div>
+            </div>	
+                
+        </div>
+        <div class="container-fluid text-center" style="background-color:#324950; color:white"> 
+            <p> Agridera Seeds and Agriculture Ltd.©2020</p>		
+        </div>	
+    </footer>
+</html>

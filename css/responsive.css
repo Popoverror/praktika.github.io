@@ -1,0 +1,525 @@
+@media screen and (max-width: 1024px){
+    #ban_text {
+        font-size: 16px
+     }
+     #products img{  
+        height: 35px;
+        margin: 15px 0 15px 0;
+      }
+     #log img{
+        width: 300px;
+    }
+
+    .bg_index  {
+        background: url(../images/bg.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }    
+   
+    .line1 { 
+        border-left: 1px solid orange;
+        padding-left: 10px; 
+    }
+      
+    .cards a {
+        color:#57984C;  
+    }
+       
+    .cards figure{
+        text-align: center;
+        background-color: white;
+    }
+      
+    .cards img{
+        display: block;
+        height: auto;
+        max-width: 100%;
+    }
+    .navbar-brand img{
+        width: 200px;
+        height: 100px;  
+        }
+    
+    .nav-bar li {
+        padding-right: 20px;   
+    }
+    
+    .nav-link {
+    font-size:1.2em !important;  
+      color: black !important;
+    }
+    
+     .header_sear {
+      box-sizing: border-box;
+      }
+    
+     .header_sear form {
+      position: relative ;
+      width: 300px;
+      border-bottom: 2px solid black;
+    }
+    
+     .header_sear input, button {
+      border: none;
+      outline: none;
+      background: transparent;
+    }
+    
+    .header_sear input {
+      width: 100px;
+      height: 50px;
+      padding-left: 15px;
+    }
+    
+    .search {
+      height: 50px;
+      width: 50px;
+      position: absolute;
+      cursor: pointer;
+      top: 0;
+      right: 0;  
+    }
+    
+    .search:before {
+      content: "\f002";
+      font-family: FontAwesome;
+      font-size: 20px;
+    }
+    .center{
+      padding: 10px;
+      margin: 0 auto;
+    }
+    .but_downoload{
+        display: inline-block;  
+        padding: 10px;
+        color: green;
+        text-align: center; 
+        float: right;
+        padding-left: 30px; 
+        width: 180px;
+        height: 50px;  
+        border: 3px solid green; 
+        border-radius: 55px;
+        background: url("../images/pdf.png") 15px no-repeat;
+        
+        }
+    .tomato{ 
+        background: url("../images/union4.png") center no-repeat;
+        background-color: #f3f3f3;   
+        background-size: cover;
+    }
+          
+    hr{ 
+        width: 150px;  
+        display: inline-block;
+        background-color: green;    
+    }
+          
+    .tomato-one img{
+        display: block;
+        height: auto;
+    }
+          
+    .tomato h5{
+        color: green;
+    }
+          
+    .tomato li{
+        color: green;
+        padding: 10px;
+    }
+          
+    .tomato li span{
+        color: black;
+    }
+    .shadow {
+        background: #fefefe;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        box-shadow: 0px 5px 5px 0px #868686;
+    }
+    .button-contact {
+        background-color: green;
+        width: 120px;
+        height: 40px;
+        color: white;
+        border-radius: 50px;
+        font-size: 12px;
+      }
+    .tomIMG img{
+        height: auto;
+        width: 400px;
+    }
+}
+@media screen and (max-width: 768px){
+    #ban_text {
+        font-size: 16px
+     }
+     #products img{  
+        height: 35px;
+        margin: 15px 0 15px 0;
+      }
+     #log img{
+        width: 200px;
+    }
+ 
+    .bg_index  {
+        background: url(../images/bg.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }    
+   
+    
+    .cross{
+        height: 6.242706298828125px;
+        width: 47.24261474609375px;
+        left: 404.99957275390625px;
+        top: 1333.9999694824219px;
+        border-radius: 0px;
+        background-image: url(../images/Crosses.png);
+        margin-bottom:30.34px;
+    }
+    
+    .line1 { 
+        border-left: 1px solid orange;
+        padding-left: 10px; 
+    }
+      
+    .cards a {
+        color:#57984C;  
+    }
+       
+    .cards figure{
+        text-align: center;
+        background-color: white;
+    }
+      
+    .cards img{
+        display: block;
+        height: auto;
+        width: 220px;
+    }
+    .navbar-brand img{
+        width: 200px;
+        height: 100px;  
+        }
+    
+    .nav-bar li {
+        padding-right: 20px;   
+    }
+    
+    .nav-link {
+    font-size:1em !important;  
+      color: black !important;
+    }
+    
+     .header_sear {
+      box-sizing: border-box;
+      }
+    
+     .header_sear form {
+      position: relative ;
+      width: 300px;
+      border-bottom: 2px solid black;
+    }
+    
+     .header_sear input, button {
+      border: none;
+      outline: none;
+      background: transparent;
+    }
+    
+    .header_sear input {
+      width: 100px;
+      height: 50px;
+      padding-left: 15px;
+    }
+    
+    .search {
+      height: 50px;
+      width: 50px;
+      position: absolute;
+      cursor: pointer;
+      top: 0;
+      right: 0;  
+    }
+    
+    .search:before {
+      content: "\f002";
+      font-family: FontAwesome;
+      font-size: 20px;
+    }
+    .center{
+      padding: 10px;
+      margin: 0 auto;
+    }
+    .but_downoload{
+        display: inline-block;  
+        padding: 10px;
+        color: green;
+        text-align: center; 
+        float: right;
+        padding-left: 30px; 
+        width: 180px;
+        height: 50px;  
+        border: 3px solid green; 
+        border-radius: 55px;
+        background: url("../images/pdf.png") 15px no-repeat;
+        
+        }
+    .tomato{ 
+        background: url("../images/union4.png") center no-repeat;
+        background-color: #f3f3f3;   
+        background-size: cover;
+    }
+          
+    hr{ 
+        width: 150px;  
+        display: inline-block;
+        background-color: green;    
+    }
+          
+    .tomIMG img{
+        display: block;
+        height: auto;
+        width: 250px;
+    }
+    .tomato-one h3{
+        font-size: 20px;
+        font-weight: bold;
+    }      
+    .tomato h5{
+        color: green;
+    }
+          
+    .tomato li{
+        color: green;
+        padding: 10px;
+    }
+          
+    .tomato li span{
+        color: black;
+    }
+    .shadow {
+        background: #fefefe;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        box-shadow: 0px 5px 5px 0px #868686;
+    }
+    .button-contact {
+        background-color: green;
+        width: 100px;
+        height: 30px;
+        color: white;
+        border-radius: 50px;
+        font-size: 12px;
+      }
+}
+@media screen and (max-width: 480px){
+    #ban_text {
+        font-size: 16px
+     }
+     #products img{  
+        height: 35px;
+        margin: 15px 0 15px 0;
+      }
+     #log img{
+        width: 200px;
+    }
+    .inner{
+        padding: 50px 20px 50px 20px;
+      }
+    .tomIMG img{
+        display: block;
+        height: auto;
+        width: 200px;
+    }
+    .tomato-one h3{
+        font-size: 16px;
+        font-weight: bold;
+    } 
+    .cards img{
+        display: block;
+        height: auto;
+        width: 300px;
+    }
+    .cards a {
+        color:#57984C;  
+        font-size: 14px;
+    }
+       
+    .cards figure{
+        text-align: center;
+        background-color: white;
+        width: 300px;
+    }
+}
+@media screen and (max-width: 400px){
+    #ban_text {
+        font-size: 16px
+     }
+     #products img{  
+        height: 35px;
+        margin: 15px 0 15px 0;
+      }
+     #log img{
+        width: 200px;
+    }
+    .inner{
+        padding: 50px 20px 50px 20px;
+      }
+    .tomIMG img{
+        display: block;
+        height: auto;
+        width: 150px;
+    }
+    .tomato-one h3{
+        font-size: 16px;
+        font-weight: bold;
+    } 
+    .tomato-one h1{
+        font-size: 20px;
+        font-weight: bold;
+    } 
+    .tomato-one h2{
+        font-size: 18px;
+        font-weight: bold;
+    } 
+    .tomato-one h4{
+        font-size: 14px;
+        font-weight: bold;
+    } 
+    .tomato-one p{
+        font-size: 12px;
+    
+    } 
+    .cards img{
+        display: block;
+        height: auto;
+        width: 300px;
+    }
+    .cards a {
+        color:#57984C;  
+        font-size: 14px;
+    }
+       
+    .cards figure{
+        text-align: center;
+        background-color: white;
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 320px){
+    #ban_text {
+        font-size: 16px
+     }
+     #products img{  
+        height: 35px;
+        margin: 15px 0 15px 0;
+      }
+     #log img{
+        width: 160px;
+    }
+    .inner{
+        padding: 50px 20px 50px 20px;
+      }
+    .tomIMG img{
+        display: block;
+        height: auto;
+        width: 120px;
+    }
+    .tomato-one hr{width: 100px;}
+    .tomato-one h3{
+        font-size: 14px;
+        font-weight: bold;
+    } 
+    .tomato-one h1{
+        font-size: 18px;
+        font-weight: bold;
+    } 
+    .tomato-one h2{
+        font-size: 16px;
+        font-weight: bold;
+    } 
+    .tomato-one h4{
+        font-size: 12px;
+        font-weight: bold;
+    } 
+    .tomato-one h5{
+        font-size: 10px;
+        font-weight: bold;
+    } 
+    .tomato-one p{
+        font-size: 10px;
+    
+    } 
+    ul.tomato-one li{
+        font-size: 10px;
+    }
+    .cards img{
+        display: block;
+        height: auto;
+        width: 200px;
+    }
+    .cards a {
+        color:#57984C;  
+        font-size: 14px;
+    }
+       
+    .cards figure{
+        text-align: center;
+        background-color: white;
+        width: 200px;
+    }
+    .header_sear {
+        box-sizing: border-box;
+        }
+      
+       .header_sear form {
+        position: relative ;
+        width: 250px;
+        border-bottom: 2px solid black;
+      }
+      
+       .header_sear input, button {
+        border: none;
+        outline: none;
+        background: transparent;
+      }
+      
+      .header_sear input {
+        width: 100px;
+        height: 50px;
+        padding-left: 15px;
+      }
+      
+      .search {
+        height: 50px;
+        width: 50px;
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        right: 0;  
+      }
+      
+      .search:before {
+        content: "\f002";
+        font-family: FontAwesome;
+      }
+      .but_downoload{
+        display: inline-block;  
+        padding: 10px;
+        color: green;
+        text-align: center; 
+        float: right;
+        padding-left: 30px; 
+        width: 100px;
+        height: 30px;  
+        border: 3px solid green; 
+        border-radius: 55px;
+        background: url("../images/pdf.png") 15px no-repeat;
+        background-size: 15px;
+        font-size: 8px;
+        }
+}

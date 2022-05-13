@@ -1,111 +1,146 @@
-.header {
-     position: absolute;
-     width: 100%;
-     left: 0;
-     top: 0;
-     z-index: 50;
+<body>
+   <div class="header">
+      <div class="logo">
+          <a href="index.html">
+            <img src="/img/Logo.png" />
+          </a>
+      </div class="search">
+      <form action="index.html" class="search-form">
+         <input type="search1" class="search-form-input" placeholder="Search" >
+         <input type="image" class="search-form-btn" src="/img/Search.png" border="0" alt="Submit" />
+       </form>
+   </div>
+</body>
+
+
+.header {  
+   display: block;
+   background: url(../img/bg.png);
+   height: 100%;
+   width: 100%;
 }
-.header__container_flex{
-     padding: 20px 0px;
-     display: flex;
-     flex-wrap: wrap;
-	margin: 0 auto;
-     justify-content: space-between; /* выравниваем блок по центру */
-     max-width: 1110px;
+
+.logo {
+   display: block;
+   width: 15px;
+   height: 60px;
+   
+}
+
+.search-form-input { 
+   display: flex;
+   color: #324950;
+   padding: 0px 18px 0px 0px;
+   border-width: 0px 0px 2px 0px;
+   border-color: #324950;
+   background: none;
+   font-family: 'RobotoSlab-Regular';
+   font-size: 14px;
+   pa
+   width: 200px;
+   height: 21px;
+   left: 115px;
+   top: 20px;
+   outline: none;
+ }
+ 
+.search-form-btn {
+   vertical-align: bottom;     
+   background: none;
+   cursor: pointer;
+   position: relative;
+   width: 15px;
+   height: 15px;
+   left: 1348px;
+   top: 23px;
+ } 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ .info {
+}
+.info__container {
+     max-width: 1566px;
+     padding: 0px 15px;
      margin: auto;
      box-sizing: content-box;
 }
-.header__container__main {
-     flex-grow:0; /* растягивание элементов */
-	display: flex; 
-     justify-content: flex-start; 
-     min-height: 117px;
-}
-.header__container__side{
-	flex-shrink:0; /* Убираем уменьшение = 150 */
-	display: flex;
-     justify-content: space-between;
-	flex-direction: column;
-}
-.header_logo {
+.info__body {
      display: flex;
-     width: 226px;
-     height: 113px;
+     margin: 0px -15px;
 }
-/* --------------------------------------------------- */
-@media (max-width: 1024px){
-     .header_logo {
-     width: 150px;
-     height: 76px
-     } 
+.info__column {
+
 }
-@media (max-width: 768px){
-     .header_logo {
-     width: 150px;
-     height: 76px
-     } 
-}
-/* --------------------------------------------------- */
-.header__search {
+.info__item {
+     padding: 35px 100px;
      display: flex;
-     align-self:flex-end;
-     margin: 0px -20px;
-}
-#search__form{  
-     
-     background: transparent;
-     height: 29px;
-     padding-left: 0px;
-     padding-right: 26px;
-     color:#324950;
-     outline: none;
-     border-bottom: 1px solid #324950;
-}
-.search__lupa {
-     position: relative;
-     cursor: pointer;
-     top: 5px;
-     right: 20px;
-     width: 20px;
-     height: 20px;
-     background: none;
-     outline: none;
-}
-.header__menu {
-     text-align: right;
-     padding-top: 91px;   
-}
-/* --------------------------------------------------- */
-@media (max-width: 1024px){
-     .header__menu {
-          margin: 60px 0px 0px 90px;  ;
-     } 
-}
-@media (max-width: 768px){
-     .header__menu {
-          margin: 30px 0px 0px 5px;
-     } 
-}
-/* --------------------------------------------------- */
-.menu{
-     padding: 15px 0px;
-}
-.menu__list {
+     justify-content: center;
      flex-wrap: wrap;
-     display: flex;
-     align-self: flex-end;
 }
-.menu__item {
-     margin: 0px 0px 0px 20px;
-     padding: 15px 0px;
+.item {
 }
-.menu__link {
+.info-link {
      color: #324950;
-     line-height: 18px;
+     text-align: center;
+     text-align-last: center;
+     vertical-align:bottom;
 }
-/* --------------------------------------------------- */
-@media (max-width: 768px){
-     .menu__link {
-          font-size: 22px;
-     } 
-}
+
+<div class="info__container">
+               <div class="info__body">
+                  <div class="info__column">
+                     <ul class="info__item item">
+                        <li class="info__item">
+                           <a href="" class="info-link">
+                              <img src="/img/wheat.svg" alt="Wheat">Wheat</a>
+                        </li>
+                        <li class="info__item">
+                           <a href="" class="info-link">
+                              <img src="/img/ConfecyionWatermalon.svg" alt="Confecyion Watermalon">Confecyion Watermalon</a>
+                        </li>
+                        <li class="info__item">
+                           <a href="" class="info-link">
+                              <img src="/img/Cover.svg" alt="Cover">Cover</a>
+                        </li>
+                        <li class="info__item">
+                           <a href="" class="info-link">
+                              <img src="/img/ConfectionSunflower.svg" alt="ConfectionSun flower">Confection Sunflower</a>
+                        </li>
+                        <li class="info__item">
+                           <a href="" class="info-link">
+                              <img src="/img/Tomato.svg" alt="Tomato">Tomato</a>
+                        </li>
+                        <li class="info__item">
+                           <a href="" class="info-link">
+                              <img src="/img/EggplantPO.svg" alt="Eggplant P/O">Eggplant P/O</a>
+                        </li>
+                        <li class="info__item">
+                           <a href="" class="info-link">
+                              <img src="/img/OrnamentalSunflower.svg" alt="Ornamental Sunflower">Ornamental Sunflower</a>
+                        </li>
+                     </ul>
+                     </div> 
+                  </div>
+               </div>
+            </div>

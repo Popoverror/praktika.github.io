@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tomato one</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<header style="background-color: white; " class="shadow">
+	<div class="container ">
+        <nav class="navbar navbar-expand-md navbar-light">
+            <div class="center">					
+                <div class="navbar-brand " id="log"><img src="images/Logo.png"></div>				
+                <button class="navbar-toggler" type="button" data-target="#my-nav" data-toggle="collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>				
+            </div>		
+            <div class="center">
+                <div class="header_sear" >			
+                <form class="form-inline ">
+                    <input type="text" placeholder="Search">
+                    <button class="search" type="submit"></button>
+                </form>	
+                </div>
+                <div id="my-nav" class="collapse navbar-collapse">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Company Profile</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Serviced</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">R & D</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact us.html" class="nav-link">Contact</a>
+                    </li>
+                    </ul>
+                </div>
+            </div>			
+        </nav>
+    </div>  
+   
+</header>
+<body  class="tomato">
+    <div class="container tomato-one " id="app">
+        <div class="row">
+            <div class="col-6 ">               
+                <a href="tomato all.html">
+                    <div class="row ">
+                        <div class="col-1 p-2">
+                            <img src="images/arrow.png" >                        
+                        </div>                       
+                        <div class="col-11 " style="color: green;  ">
+                            <p>Return to all tomatoes</p>
+                        </div>                        
+                    </div>
+                </a>
+                <h1>{{product.title}}</h1>
+                    <h1 style="color: green;;"><b>{{product.short_text}}</b></h1>
+                     <div class="cross"></div>               
+                <div  class="row  mt-3">
+                    <div class="col-lg-2 col-md-4"> 
+                         <img src="images/tomat.png" width="80px" height="80px">
+                    </div>
+                    <div class="col-lg-10 col-md-8 ">
+                        <h3  style="color: red;">Very high yield and 
+                           excellent fruits quality!</h3>
+                    </div>                                            
+                </div> 
+                    <h3 style="color: green;;" class="mt-5">CHARACTERISTICS</h3>
+                    <hr>
+                    <p><b>Resistance</b></p>
+                    <p>HR: ToMV:0-2; Fol: 1,2; Ve/Vd;</p>
+                    <p>IR: TYLCV</p>   
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 " id="tomIMG">
+                <img :src="'images/'+product.image" >
+                <div class="p-2" >
+                <a class="but_downoload"  @click.prevent="addToCart(product.id)" href="#" v-if="!btnVisible" > Add to cart</a>
+                <a class="but_downoload" href="contact us.html" v-if="btnVisible">Go to cart</a>
+                </div>
+        </div>
+    </div>      
+    
+    <div class="container mt-2">
+        <div class="row ">
+            <div class="col-6">
+               <h5>Plants</h5> 
+                <hr>
+               <ul>
+                    <li><span>Strong vigor that provides good leaf coverage.</span></li>
+                    <li><span>Very high productivity with good fruit setting.</span></li>
+                    <li><span> Early matured variety.</span></li>
+                </ul>                                    
+            </div>             
+             <div class="col-6">
+                <h5>Cycle</h5> 
+                 <hr>
+                <ul>
+                     <li><span>Spring</span></li>
+                     <li><span>Fall</span></li>
+                     <li><span>Winter</span></li>
+                 </ul>
+             </div>
+             <div class="col-6">
+                <h5>Fruit</h5> 
+                 <hr>
+                <ul>
+                    <li><span>Long shelf life on plant and post harvest.</span></li>
+                    <li><span>Nice shiny attractive deep red color.</span></li>
+                    <li><span>Average fruit size: 140 – 160 grams.</span></li>
+                </ul>
+             </div>            
+             <div class="col-6">
+                <h5>Color</h5> 
+                 <hr>
+                <ul>
+                    <li><span>Red</span></li>
+                 </ul>
+             </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+	<script src="js/main.js"></script>
+</body>
+<footer class="ico">
+    <div class="container-fluid text-center ">
+        <div class="row padding justify-content-center ">
+            <div class="col-lg-8 col-md-8 col-sm-6 ">
+                <ul class="hr">
+                    <a href=""><li>PROFILE</li></a>
+                    <a href=""><li>MANAGEMENT</li></a>
+                    <a href=""><li>PRODUCTS</li></a>
+                    <a href=""><li>R&D</li></a>
+                    <a href=""><li>LINKS</li></a>
+                    <a href=""><li>SITEMAP</li></a>
+                    <a href=""><li>CONTACTS</li></a>
+                </ul>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6 ">
+                <a href="#"><img src="images/Ico_tw.png" alt=""></a>
+                <a href="#"><img src="images/Ico_inst.png" alt=""></a>
+                <a href="#"><img src="images/Ico_fb.png" alt=""></a>
+                <a href="#"><img src="images/Ico_tube.png" alt=""></a>
+                <a href="#"><img src="images/Ico_in.png" alt=""></a>
+            </div>
+        </div>	
+            
+    </div>
+    <div class="container-fluid text-center" style="background-color:#324950; color:white"> 
+        <p> Agridera Seeds and Agriculture Ltd.©2020</p>		
+    </div>	
+</footer>
+ </html>
